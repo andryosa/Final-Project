@@ -166,7 +166,7 @@ align-content: center;
     transition: transform 0.5s;
 }
 .Andri:hover{
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
     float: left;
     /* width: 250px; */
     margin-right: 20px;
