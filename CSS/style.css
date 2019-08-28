@@ -16,10 +16,9 @@ body{
 header{
 display: flex;
 position: fixed;
-top: 0;
-left: 0;
-right:0;
 height: 50px;
+width: 97%;
+/* padding-right: 3vw; */
 line-height: 50px;
 margin: 15px;
 background-color: rgba(5, 182, 170, 0.788);
@@ -41,13 +40,14 @@ header li{
     list-style-type: none;
     background-color: #F36D30;
     border-radius: 2px;
-    margin-left: 10px;
+    margin-left: 1.5vw;
     display: inline;
     text-decoration: none;
     color: #D3DF41;
     padding: 5px;
     height: 10px;
-    transition: transform 0.5s;
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 .navbar>li>a:hover{
     transform: scale(1.50);
@@ -87,11 +87,12 @@ header li{
 }
 
 #home h1{
-    font-size: 40px;
+    font-size: 3rem;
 }
 
 #portfolio{
     height: 80vh;
+    font-size: 2vw;
     border: 1px solid #F36D30;
     display: flex;
     justify-content: center;
@@ -104,28 +105,33 @@ header li{
     text-align: left;
 }
 #portfolio>a>img{
-    width: 175px;
+    width: 15vw;
     /* margin-left: 50px; */
     
 }
 #portfolio>a{
     text-decoration: none;
+    font-size: 1.5vw;
     color: #D3DF41;
     text-align: right;
-    margin-left: 50px;
+    margin-left: 3vw;
     transition: transform 0.5s;
 }
 #portfolio>a:hover{
     transform: scale(1.25);
     /* width: 200px; */
-    margin-left: 50px;
+    /* margin-left: 3vw; */
 }
+/* #illu{padding-right: 3vw} */
+
 #portfolio>h3{
     float: inline-end;
+    padding-left: 3vw;
+
 }
 
 #about{
-    height: 80vh;
+    /* height: 80vh; */
     border: 1px solid #F36D30;
     display: flex;
     background-size: cover;
@@ -142,8 +148,10 @@ div>.aboutme{
     font-size: 45px;
     /* padding-top: 0; */
 }
-#about>p{
+#about p{
     text-justify: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 /* #about .profile-img{
     width: 100px;
@@ -158,20 +166,27 @@ align-content: center;
 
 .Andri{
     float: left;
-    width: 400px;
+    width: 30vw;
     margin-left: 100px;
     margin-right: 20px;
+    padding-bottom: 50px;
     /* background-image: url(../Images/fotoaboutbw.jpg); */
-    border-radius: 2% 2% 2% 2%;
+    /* border-radius: 2% 2% 2% 2%; */
     transition: transform 0.5s;
 }
-.Andri:hover{
-    /*transform: scale(1.1);*/
+/* .Andri:hover{
+    transform: scale(1.1);
     float: left;
-    /* width: 250px; */
+    width: 250px;
     margin-right: 20px;
     background-image: url(../Images/fotoaboutbw.jpg);
+} */
+
+.imaa {padding-bottom: 50px;
+    padding-left: 3vw;
+
 }
+
 section ul li{
     list-style-type: none;
     text-align: center;
