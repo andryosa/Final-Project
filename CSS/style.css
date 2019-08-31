@@ -120,7 +120,7 @@ header div:hover{
     font-size: 1.5vw;
     color: #D3DF41;
     text-align: center;
-    margin-left: 5vw;
+    /* margin-left: 5vw; */
     transition: transform 0.5s;
     padding-top: 100px;
     padding-bottom: 10px;
@@ -136,7 +136,7 @@ header div:hover{
 .porto>a:hover{
     transform: scale(1.25);
     /* width: 200px; */
-    /* margin-left: 3vw; */
+    margin-left: 0;
 }
 
 .portoContainer>h3{
@@ -273,7 +273,7 @@ footer{
   
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 550px){
 
     header{
         position: unset;
@@ -299,7 +299,7 @@ footer{
         padding-bottom: 20px;
         font-size: 20px;
     }
-    
+
     .porto>a:hover{
         transform: scale(1);
         /* width: 200px; */
