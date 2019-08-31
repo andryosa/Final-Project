@@ -195,7 +195,9 @@ align-content: center;
     background-image: url(../Images/fotoaboutbw.jpg);
 } */
 
-.imaa {padding-bottom: 50px;
+.imaa {
+    width: 100px;
+    padding-bottom: 50px;
     padding-left: 3vw;
 
 }
