@@ -299,6 +299,12 @@ footer{
         padding-bottom: 20px;
         font-size: 20px;
     }
+    
+    .porto>a:hover{
+        transform: scale(1);
+        /* width: 200px; */
+        margin-left: 0;
+    }
 
     .porto>a>img{
         width: 40%;
