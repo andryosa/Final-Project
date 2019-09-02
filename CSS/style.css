@@ -1,6 +1,6 @@
 body{
-    /* background-image: url('../Images/10068.png');
-    background-size: cover; */
+    /* background-image: url('../Images/10068.png');*/
+    background-size: cover;
     margin: 0;
     font-family: Helvetica;
 
@@ -23,9 +23,10 @@ margin: 15px;
 background-color: rgba(5, 182, 170, 0.788);
 border-radius: 10px;
 }
-
-header div{
-   
+.nav{
+    margin-top: 17px;
+}
+.nav a{
     list-style-type: none;
     background-color: #F36D30;
     margin-left: 1.5vw;
@@ -35,25 +36,32 @@ header div{
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 7px;
+    padding-bottom: 7px;
     border-radius: 5px;
     height: 25px;
     justify-content: center;
     transition-property: background-color;
     transition-duration: 0.5s;
-    
+    color: #D3DF41;
+    text-align: center;
+    text-decoration: none;
 }
-.nav>a{
+/* .nav>a{
+    padding: 6px;
     text-align: center;
     text-decoration: none;
     color: #D3DF41;
-}
-header div:hover{
+} */
+
+/* header div:hover{
     background-color: #D3DF41;
     text-decoration: none;
-    /* padding: 5px; */
-}
+    padding: 5px;
+} */
 
 .nav>a:hover {
+    background-color: #D3DF41;
+    text-decoration: none;
     text-decoration: none;
     color: #F36D30;
     
@@ -111,8 +119,14 @@ header div:hover{
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+    
+    border: #05B6AB solid 1px;
 }
 
+.porr{
+    /* margin-left:300px; */
+    border: #05B6AB solid 1px;
+}
 
 .porto>a{
     float: left;
@@ -133,13 +147,14 @@ header div:hover{
     
 }
 
+
 .porto>a:hover{
     transform: scale(1.25);
     /* width: 200px; */
     margin-left: 0;
 }
 
-.portoContainer>h3{
+h3{
     text-align: center;
 }
 
@@ -282,14 +297,16 @@ footer{
         margin: 0;
         width: 100%;
         /* height: 70px; */
+        background-color: #F36D30;
     }
-    
-    header div{
-        display: inline;
-        padding-top: 15px;
-        padding-bottom: 10px;
+    .nav{
         width: 100%;
-        margin: 0;
+    }
+    .nav>a{
+        display: inline;
+        /* width: 100%; */
+        padding-top: 17px;
+        padding-bottom: 16px;
         border-radius: 0;
     }
 
@@ -317,5 +334,9 @@ footer{
         margin-left: 10%;
         width: 80%;
         align-items: center;
+    }
+
+    #contact{
+        background-image: url(../Images/contact-bg.jpg);
     }
 }
