@@ -23,10 +23,9 @@ margin: 15px;
 background-color: rgba(5, 182, 170, 0.788);
 border-radius: 10px;
 }
-.nav{
-    margin-top: 17px;
-}
-.nav a{
+
+header div{
+   
     list-style-type: none;
     background-color: #F36D30;
     margin-left: 1.5vw;
@@ -36,32 +35,25 @@ border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 7px;
-    padding-bottom: 7px;
     border-radius: 5px;
     height: 25px;
     justify-content: center;
     transition-property: background-color;
     transition-duration: 0.5s;
-    color: #D3DF41;
-    text-align: center;
-    text-decoration: none;
 }
-/* .nav>a{
+.nav>a{
     padding: 6px;
     text-align: center;
     text-decoration: none;
     color: #D3DF41;
-} */
-
-/* header div:hover{
+}
+header div:hover{
     background-color: #D3DF41;
     text-decoration: none;
-    padding: 5px;
-} */
+    /* padding: 5px; */
+}
 
 .nav>a:hover {
-    background-color: #D3DF41;
-    text-decoration: none;
     text-decoration: none;
     color: #F36D30;
     
@@ -119,13 +111,23 @@ border-radius: 10px;
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
-.porr{
-    /* margin-left:300px; */
-    
+.portoContainer>h3{
+    align-self: center;
 }
+
+.portosDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
 
 .porto>a{
     float: left;
@@ -146,14 +148,13 @@ border-radius: 10px;
     
 }
 
-
 .porto>a:hover{
     transform: scale(1.25);
     /* width: 200px; */
     margin-left: 0;
 }
 
-h3{
+.portoContainer>h3{
     text-align: center;
 }
 
@@ -273,6 +274,7 @@ footer{
 }
 #home{
      background-image:  url(../Images/bg2-01.png);
+     /* background-size: 100vh; */
     }
 #portfolio{
     background-image: url(../Images/backport.jpg);
@@ -296,16 +298,14 @@ footer{
         margin: 0;
         width: 100%;
         /* height: 70px; */
-        background-color: #F36D30;
     }
-    .nav{
-        width: 100%;
-    }
-    .nav>a{
+    
+    header div{
         display: inline;
-        /* width: 100%; */
-        padding-top: 17px;
-        padding-bottom: 16px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        width: 100%;
+        margin: 0;
         border-radius: 0;
     }
 
@@ -337,5 +337,11 @@ footer{
 
     #contact{
         background-image: url(../Images/contact-bg.jpg);
+    }
+
+    .portosDiv{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
     }
 }
